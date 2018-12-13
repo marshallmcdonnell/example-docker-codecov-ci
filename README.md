@@ -1,3 +1,7 @@
+| DevOps |
+|--------|
+| [![Build Status](https://travis-ci.org/marshallmcdonnell/example-docker-codecov-ci.svg?branch=master)](https://travis-ci.org/marshallmcdonnell/example-docker-codecov-ci) |
+
 # example-docker-codecov-ci
 Sandbox for setting up docker for CI and codecov with Python
 
