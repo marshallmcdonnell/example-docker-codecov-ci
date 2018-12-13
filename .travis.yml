@@ -9,7 +9,8 @@ before_install:
   - docker build -t app-test -f docker/Dockerfile.test .
 
 script:
+  - token=c8177873-edfa-40bc-9889-8c07047002d5
   - ci_env="bash <(curl -s https://codecov.io/env)"
-  - ci_post_cov="bash <(curl -s https://codecov.io/bash)"
+  - ci_post_cov="bash <(curl -s https://codecov.io/bash) -t $token"
   - docker run -t app-test /bin/bash -c "$ci_env && pytest && coverage run -m pytest && $ci_post_cov"
 
