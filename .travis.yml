@@ -5,9 +5,6 @@ language: python
 services:
   - docker
 
-before_install:
-  - docker build -t app-test -f docker/Dockerfile.test .
-
 script:
-  - docker run -t app-test
+  - docker build -f docker/Dockerfile.test .
 
