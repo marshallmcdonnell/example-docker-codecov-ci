@@ -9,5 +9,6 @@ before_install:
   - docker build -t app-test -f docker/Dockerfile.test .
 
 script:
-  - docker run -t app-test
+  - ci_env=`bash <(curl -s https://codecov.io/env)`
+  - docker run $ci_env -t app-test
 
