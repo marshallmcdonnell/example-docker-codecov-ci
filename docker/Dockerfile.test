@@ -14,5 +14,5 @@ RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
 
 # Copy git content from current branch
-ADD ./app $WORKDIR
+ADD . $WORKDIR
 
