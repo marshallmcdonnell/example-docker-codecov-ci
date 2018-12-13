@@ -11,5 +11,5 @@ before_install:
 script:
   - ci_env="bash <(curl -s https://codecov.io/env)"
   - ci_post_cov="bash <(curl -s https://codecov.io/bash)"
-  - docker run -t app-test /bin/bash -c "$ci_env && pytest && coverage run -m pytest"
+  - docker run -t app-test /bin/bash -c "$ci_env && pytest && coverage run -m pytest && $ci_post_cov"
 
