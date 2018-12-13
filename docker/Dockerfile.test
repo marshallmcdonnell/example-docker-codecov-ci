@@ -4,7 +4,7 @@ FROM ubuntu:bionic
 # Install python dependencies
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get install python-pip curl git hg -y && \
+    apt-get install python-pip curl git mercurial -y && \
     pip install pytest codecov
 
 
