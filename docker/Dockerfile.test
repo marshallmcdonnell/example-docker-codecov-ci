@@ -14,8 +14,8 @@ RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
 
 # Copy git content from current branch
-ADD . $WORKDIR
+ADD ./app $WORKDIR
 
 # run maven verify
-RUN ["pytest"]
+CMD ["pytest"]
 
