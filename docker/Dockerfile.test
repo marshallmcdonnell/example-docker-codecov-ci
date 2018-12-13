@@ -16,6 +16,3 @@ WORKDIR $APP_HOME
 # Copy git content from current branch
 ADD ./app $WORKDIR
 
-# run maven verify
-CMD ["pytest"]
-

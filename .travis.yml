@@ -10,5 +10,5 @@ before_install:
 
 script:
   - ci_env=`bash <(curl -s https://codecov.io/env)`
-  - docker run $ci_env -t app-test
+  - docker run -t app-test /bin/bash -c "pytest && $ci_env"
 

@@ -6,5 +6,5 @@ The example app is used from: http://luisquintanilla.me/2018/02/18/testing-deplo
 ## To run test
 Run the following:
 ```
-docker build -t app-test -f docker/Dockerfile.test . && docker run -t app-test
+docker build -t app-test -f docker/Dockerfile.test . && docker run -t app-test pytest
 ```
