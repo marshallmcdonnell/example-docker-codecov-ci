@@ -4,8 +4,8 @@ FROM ubuntu:bionic
 # Install python dependencies
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get install python-pip -y && \
-    pip install pytest
+    apt-get install python-pip curl -y && \
+    pip install pytest codecov
 
 
 # Setup work directory
