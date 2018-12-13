@@ -1,5 +1,5 @@
 # Get python version
-FROM python:3.6-slim
+FROM ubuntu:bionic
 
 # Install python dependencies
 RUN apt-get update && \
